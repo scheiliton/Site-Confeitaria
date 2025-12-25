@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Dancing+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background-image: url('Bolo de calda.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 22%;
+  color: #222;
+}
+
+/* Camada suave para melhorar legibilidade sobre o fundo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* leve escurecimento para destacar o menu */
+  pointer-events: none;
+}
+
+/* Imagens menores (logo/ícones) */
+img {
+  width: 60px;
+  border-radius: 10%;
+  display: block;
+}
+
+/* Cabeçalho e menu */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* remove o bloco vermelho */
+  padding: 8px 12px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; /* remove o bloco vermelho */
+  border-radius: 5px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  color: #f5efea; /* branco quente para harmonizar com o layout */
+  font-family: 'Playfair Display', serif; /* contraste elegante com títulos em script */
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* Hover sutil para navegação */
+.menu li a:hover,
+.menu li a:focus {
+    
+  background: #6a4a4a;
+  color: #ffffff;
+  outline: none;
+}
+
+/* Dropdown */
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+            
+  background: #6a4a4a;
+  min-width: 180px;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+.menu li ul li {
+  display: block;
+  width: 100%;
+}
+
+.menu li ul li a {
+  padding: 10px 14px;
+  border-radius: 0;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+/* Ícones sociais */
+.icone {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+}
+
+.icone img {
+  width: 22px; /* ícones ainda menores */
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.icone img:hover {
+  transform: scale(1.12);
+  opacity: 0.9;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .menu {
+    gap: 0.25rem;
+  }
+  .menu li a {
+    padding: 8px 10px;
+    font-weight: 600;
+  }
+}
+
+/* Tipografia principal */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f5efea;
+  font-family: 'great vibes', cursive;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+  color: #f5efea;
+  text-align: center;
+  font-family: 'great vibes', cursive;
+  letter-spacing: 0.5px;
+}
+
+/* Hero */
+.hero {
+  height: 15vh;
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* (Opcional) reduzir imagens dentro da hero, se houver */
+.hero img {
+  max-width: 280px;
+  height: auto;
+}

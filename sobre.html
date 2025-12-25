@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Mim | Ingrid Confeitaria Artesanal</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== MENU (do primeiro código) ===== */
+.menu-container {
+    background: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LINKS */
+.menu-links {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #6a3f3a;
+    font-size: 0.90rem;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.menu-links a:hover {
+    color: #c07a92;
+}
+
+/* ÍCONES */
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVO MENU */
+@media (max-width: 900px) {
+    .menu {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fbf2f6;
+    color: #4a2f2a;
+    line-height: 1.7;
+}
+
+/* CONTAINER */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto 0;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 45px rgba(192,122,154,0.2);
+    text-align: center;
+}
+
+/* TÍTULO */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #c07a9a;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #f2c6d8;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* TEXTO */
+.about-text {
+    font-size: 1.15rem;
+    font-style: italic;
+    margin: 30px 0;
+    color: #5a3a36;
+}
+
+/* DESTAQUES */
+.highlights {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.highlight-item {
+    background: linear-gradient(135deg, #fdf2f8, #fde7f1);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(192,122,154,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(192,122,154,0.25);
+}
+
+.highlight-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.highlight-title {
+    font-size: 1.3rem;
+    color: #c07a9a;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.highlight-desc {
+    font-size: 1rem;
+    color: #5a3a36;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .about-container {
+        margin: 20px auto 0;
+        padding: 35px 25px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.05rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header class="menu-container">
+    <nav class="menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="Bolos.html">Bolos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.instagram.com/ingridsantoss21" target="_blank" rel="noopener">
+                    <img src="./instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./tik-tok.png" alt="TikTok">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTEÚDO -->
+<div class="about-container">
+    <h1 class="section-title">Sobre Mim</h1>
+
+    <p class="about-text">
+        Olá! Sou Ingrid, apaixonada por confeitaria artesanal desde criança.
+        Cada doce é preparado com carinho, ingredientes selecionados e atenção a cada detalhe,
+        para transformar momentos simples em memórias inesquecíveis.
+    </p>
+
+    <ul class="highlights">
+        <li class="highlight-item">
+            <div class="highlight-icon">🍰</div>
+            <div class="highlight-title">Bolos Personalizados</div>
+            <div class="highlight-desc">
+                Criações exclusivas para festas, aniversários e casamentos
+            </div>
+        </li>
+
+        <li class="highlight-item">
+            <div class="highlight-icon">🍓</div>
+            <div class="highlight-title">Ingredientes Frescos</div>
+            <div class="highlight-desc">
+                Frutas da estação e matérias-primas de alta qualidade
+            </div>
+        </li>
+
+        <li class="highlight-item">
+            <div class="highlight-icon">✨</div>
+            <div class="highlight-title">100% Artesanal</div>
+            <div class="highlight-desc">
+                Produção feita à mão, com dedicação e cuidado em cada etapa
+            </div>
+        </li>
+
+        <li class="highlight-item">
+            <div class="highlight-icon">❤️</div>
+            <div class="highlight-title">Carinho em Cada Entrega</div>
+            <div class="highlight-desc">
+                Produtos entregues com zelo, frescor e apresentação impecável
+            </div>
+        </li>
+    </ul>
+
+    <p class="about-text">
+        Vamos adoçar seus momentos especiais?  
+        Entre em contato e solicite seu orçamento 💕
+    </p>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingrid Confeitaria Artesanal</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== MENU ===== */
+.menu-container {
+    background: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LINKS */
+.menu-links {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #6a3f3a;
+    font-size: 0.90rem;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.menu-links a:hover {
+    color: #c07a92;
+}
+
+/* ÍCONES */
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVO MENU */
+@media (max-width: 900px) {
+    .menu {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fbf2f6;
+    color: #4a2f2a;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+/* HEADER INTRODUÇÃO */
+.intro-header {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.intro-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #c07a9a;
+    margin-bottom: 10px;
+}
+
+.intro-header p {
+    font-size: 1.3rem;
+    color: #5a3a36;
+    opacity: 0.9;
+}
+
+/* SECTION */
+.section {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 50px 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 40px rgba(192,122,154,0.2);
+}
+
+/* TÍTULO */
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    color: #c07a9a;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 500;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #f2c6d8;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+/* WHATSAPP HERO */
+.whatsapp {
+    background: #f2c6d8;
+    text-align: center;
+    border-radius: 30px;
+    padding: 60px 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.whatsapp span {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.whatsapp a {
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #4a2f2a;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.9);
+}
+
+.whatsapp a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.whatsapp p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.whatsapp .phone {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4a2f2a;
+    margin: 10px 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 0;
+    }
+
+    .container {
+        margin: 20px auto 0;
+    }
+
+    .intro-header {
+        padding: 40px 25px;
+        margin-bottom: 20px;
+    }
+
+    .intro-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro-header p {
+        font-size: 1.1rem;
+    }
+
+    .section {
+        padding: 40px 25px;
+    }
+
+    .whatsapp {
+        padding: 50px 20px;
+    }
+
+    .whatsapp a {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header class="menu-container">
+    <nav class="menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="Bolos.html">Bolos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.instagram.com/ingridsantoss21" target="_blank" rel="noopener">
+                    <img src="./instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./tik-tok.png" alt="TikTok">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTEÚDO -->
+<div class="container">
+
+    <!-- INTRODUÇÃO (antigo header) -->
+    <div class="intro-header">
+        <h1>🍰 Ingrid Confeitaria Artesanal</h1>
+        <p>Doces feitos à mão para momentos inesquecíveis</p>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="section whatsapp">
+        <h2 class="section-title">Faça seu pedido agora</h2>
+        <span>💬</span>
+        <a href="https://wa.me/556191424563?text=Oi%20Ingrid!%20Vi%20seu%20site%20🍰" target="_blank" rel="noopener noreferrer" title="Enviar mensagem pelo WhatsApp">
+            Enviar pedido pelo WhatsApp
+        </a>
+        
+        <div class="phone">(61) 9142-4563</div>
+
+        <p>Clique no botão e fale direto pelo WhatsApp</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+        
+            

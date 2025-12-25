@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio | Ingrid Confeitaria Artesanal</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== MENU ===== */
+.menu-container {
+    background: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LINKS */
+.menu-links {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #6a3f3a;
+    font-size: 0.90rem;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.menu-links a:hover {
+    color: #c07a92;
+}
+
+/* ÍCONES */
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVO MENU */
+@media (max-width: 900px) {
+    .menu {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fbf2f6;
+    color: #4a2f2a;
+    line-height: 1.7;
+}
+
+/* CONTAINER PRINCIPAL */
+.cardapio-container {
+    max-width: 900px;
+    margin: 40px auto 0;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 50px 40px;
+    box-shadow: 0 15px 40px rgba(192,122,154,0.2);
+}
+
+/* TÍTULOS */
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #c07a9a;
+    margin: 50px 0 25px;
+    position: relative;
+    font-weight: 500;
+}
+
+.section-title:first-child {
+    margin-top: 0;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #f2c6d8;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* ITENS */
+.menu-item {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    border-bottom: 1px dashed #f2c6d8;
+    font-size: 1.15rem;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-name {
+    font-style: italic;
+}
+
+/* DESTAQUE INFO */
+.menu-item strong {
+    color: #c07a9a;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .cardapio-container {
+        margin: 20px auto 0;
+        padding: 35px 25px;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header class="menu-container">
+    <nav class="menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="Bolos.html">Bolos</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.instagram.com/ingridsantoss21" target="_blank" rel="noopener">
+                    <img src="./instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./tik-tok.png" alt="TikTok">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CARDÁPIO -->
+<div class="cardapio-container">
+
+    <h1 class="section-title">Massas Disponíveis</h1>
+    <div class="menu-item"><span class="item-name">Baunilha</span></div>
+    <div class="menu-item"><span class="item-name">Chocolate</span></div>
+    <div class="menu-item"><span class="item-name">Red Velvet</span></div>
+
+    <h1 class="section-title">Recheios Tradicionais – <strong>R$ 78,00/kg</strong></h1>
+    <div class="menu-item"><span class="item-name">Brigadeiro preto</span></div>
+    <div class="menu-item"><span class="item-name">Brigadeiro branco</span></div>
+    <div class="menu-item"><span class="item-name">Baba de moça</span></div>
+    <div class="menu-item"><span class="item-name">Beijinho</span></div>
+    <div class="menu-item"><span class="item-name">Doce de leite cremoso</span></div>
+
+    <h1 class="section-title">Recheios Especiais – <strong>R$ 89,00/kg</strong></h1>
+    <div class="menu-item"><span class="item-name">Brigadeiro de 4 leites</span></div>
+    <div class="menu-item"><span class="item-name">Brigadeiro gourmet (branco ou preto)</span></div>
+    <div class="menu-item"><span class="item-name">Brigadeiro de café</span></div>
+    <div class="menu-item"><span class="item-name">Brigadeiro de leite Ninho</span></div>
+    <div class="menu-item"><span class="item-name">Brigadeiro de paçoca</span></div>
+    <div class="menu-item"><span class="item-name">Nozes</span></div>
+    <div class="menu-item"><span class="item-name">Olho de sogra</span></div>
+    <div class="menu-item"><span class="item-name">Ganache de limão</span></div>
+    <div class="menu-item"><span class="item-name">Ganache de chocolate ao leite</span></div>
+    <div class="menu-item"><span class="item-name">Ganache de frutas vermelhas</span></div>
+
+    <h1 class="section-title">Opções com Frutas</h1>
+    <div class="menu-item"><span class="item-name">Morango (fruta ou geleia)</span></div>
+    <div class="menu-item"><span class="item-name">Abacaxi</span></div>
+    <div class="menu-item"><span class="item-name">Uva (fruta)</span></div>
+    <div class="menu-item"><span class="item-name">Maracujá (geleia)</span></div>
+    <div class="menu-item"><span class="item-name">Frutas vermelhas (geleia)</span></div>
+
+    <h1 class="section-title">Recheios Premium – <strong>R$ 95,00/kg</strong></h1>
+    <div class="menu-item"><span class="item-name">Laka Óreo</span></div>
+    <div class="menu-item"><span class="item-name">Ferrero Rocher</span></div>
+    <div class="menu-item"><span class="item-name">Rafaello</span></div>
+    <div class="menu-item"><span class="item-name">Nutella cremosa</span></div>
+    <div class="menu-item"><span class="item-name">Kinder Bueno</span></div>
+    <div class="menu-item"><span class="item-name">Sonho de Valsa</span></div>
+    <div class="menu-item"><span class="item-name">Ouro Branco</span></div>
+
+    <h1 class="section-title">Informações Gerais</h1>
+    <div class="menu-item"><span class="item-name">Pedido mínimo: 1,5 kg</span></div>
+    <div class="menu-item"><span class="item-name">Retirada: Guará I</span></div>
+    <div class="menu-item"><span class="item-name">Forma de pagamento: PIX</span></div>
+
+    <h1 class="section-title">Personalizações</h1>
+    <div class="menu-item"><span class="item-name">Topos em scrap: preço a combinar</span></div>
+    <div class="menu-item"><span class="item-name">Flores naturais: preço a combinar</span></div>
+
+    <h1 class="section-title">Contato</h1>
+    <div class="menu-item">
+        <span class="item-name">Instagram: <strong>@ingridsantoss21</strong></span>
+    </div>
+
+</div>
+
+</body>
+</html>
+
